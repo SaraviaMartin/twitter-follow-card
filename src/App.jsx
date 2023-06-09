@@ -1,26 +1,17 @@
 import { useState } from 'react'
 import "./App.css"
+import { TwitterFollowCard } from './TwitterFollowCard'
 
 
 function App() {
-
-
   return (
-    <article className='tw-followCard'>
-      <header className='tw-followCard-header'>
-        <img className='tw-followCard-avatar' src="https://unavatar.io/reddit.com" alt="avatar random" />
-        <div className='tw-followCard-info'>
-          <strong>Reddit</strong>
-          <span className='tw-followCard-infoUserName'>@redditontwitter</span>
-        </div>
-      </header>
-
-      <aside>
-        <button className='tw-followCard-button'>
-          Seguir
-        </button>
-      </aside>
-    </article>
+    <section className="App">
+      <TwitterFollowCard isFollowing={true} userName="Reddit" name="RedditOnTwitter" />
+      <TwitterFollowCard isFollowing={true} userName="Alphose" name="Juan Martin Saravia" />
+      <TwitterFollowCard isFollowing={true} userName="Goku" name="Goku Oficial" />
+      <TwitterFollowCard isFollowing={true}userName="billgates" name="Bill Gates" />
+    </section>
+    
   )
 }
 
