@@ -9,7 +9,7 @@ function App() {
       <TwitterFollowCard  userName="Reddit" initialIsFollowing={true} >
         RedditOnTwitter
       </TwitterFollowCard>
-      <TwitterFollowCard  userName="Alphose">
+      <TwitterFollowCard  userName="Alphose" initialIsFollowing={true}>
         Juan Martin Saravia
       </TwitterFollowCard>
       <TwitterFollowCard  userName="Goku">
